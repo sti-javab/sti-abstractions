@@ -9,11 +9,11 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-
     <properties>
-        <!--    Maven plugins    -->
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
+
+        <!--    Maven plugins    -->
         <maven.clean.plugin.version>2.5</maven.clean.plugin.version>
         <maven.compiler.plugin.version>3.5</maven.compiler.plugin.version>
         <maven.dependency.plugin.version>2.9</maven.dependency.plugin.version>
@@ -27,11 +27,37 @@
         <maven.resources.plugin.version>3.0.1</maven.resources.plugin.version>
         <maven.revapi.plugin.version>0.12.1</maven.revapi.plugin.version>
         <maven.surefire.plugin.version>2.19.1</maven.surefire.plugin.version>
+
+        <!-- versions -->
+        <junit.version>4.13.1</junit.version>
     </properties>
+
 
     <modules>
         <module>sti-abstractions-domain</module>
+        <module>sti-abstractions-service-impl</module>
     </modules>
+
+    <dependencyManagement>
+        <dependencies>
+
+            <!-- project -->
+            <dependency>
+                <groupId>se.sti</groupId>
+                <artifactId>sti-abstractions-domain</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+
+            <!-- https://mvnrepository.com/artifact/junit/junit -->
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>${junit.version}</version>
+                <scope>test</scope>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
 
     <build>
         <resources>
