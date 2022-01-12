@@ -4,6 +4,9 @@ import sti.abstractions.domain.Owl;
 
 public class ForestServiceImpl {
 
-    Owl owl;
+    public Owl createOwl(int wingSpan){
+        Owl owl = new Owl(wingSpan);
+        return owl;
+    }
 
 }

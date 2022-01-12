@@ -21,11 +21,7 @@
         <maven.jar.plugin.version>2.4</maven.jar.plugin.version>
         <maven.javadoc.plugin.version>2.9</maven.javadoc.plugin.version>
         <maven.plugin.plugin.version>3.2</maven.plugin.plugin.version>
-        <maven.os.plugin.version>1.5.0.Final</maven.os.plugin.version>
-        <maven.protobuf.plugin.version>0.5.1</maven.protobuf.plugin.version>
-        <maven.sugar.plugin.version>0.0.10</maven.sugar.plugin.version>
         <maven.resources.plugin.version>3.0.1</maven.resources.plugin.version>
-        <maven.revapi.plugin.version>0.12.1</maven.revapi.plugin.version>
         <maven.surefire.plugin.version>2.19.1</maven.surefire.plugin.version>
 
         <!-- versions -->

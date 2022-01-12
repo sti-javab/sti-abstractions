@@ -18,7 +18,7 @@ public class Owl extends Animal implements Aviator{
         if(wingSpan >=75 && wingSpan <= 110) {
             this.wingSpan = wingSpan;
         }else{
-            wingSpan = DEFAULT_WINGSPAN;
+            this.wingSpan = DEFAULT_WINGSPAN;
         }
     }
 
