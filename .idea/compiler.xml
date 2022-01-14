@@ -9,11 +9,13 @@
         <module name="sti-abstractions-service-impl" />
         <module name="sti-abstractions-test-domain" />
         <module name="sti-abstractions-domain" />
+        <module name="sti-abstractions-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="sti-abstractions" target="8" />
       <module name="sti-abstractions-domain" target="1.8" />
+      <module name="sti-abstractions-service" target="1.8" />
       <module name="sti-abstractions-service-impl" target="1.8" />
       <module name="sti-abstractions-test" target="8" />
       <module name="sti-abstractions-test-domain" target="1.8" />

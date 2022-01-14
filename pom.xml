@@ -26,10 +26,12 @@
         <maven.resources.plugin.version>3.0.1</maven.resources.plugin.version>
 
         <junit.version>4.13.1</junit.version>
+        <spring.version>5.3.13</spring.version>
     </properties>
 
     <modules>
         <module>sti-abstractions-domain</module>
+        <module>sti-abstractions-service</module>
         <module>sti-abstractions-service-impl</module>
         <module>sti-abstractions-test</module>
     </modules>
@@ -49,7 +51,11 @@
                 <version>1.0-SNAPSHOT</version>
             </dependency>
 
-            <!-- https://mvnrepository.com/artifact/junit/junit -->
+            <dependency>
+                <groupId>se.sti</groupId>
+                <artifactId>sti-abstractions-service</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
             <dependency>
                 <groupId>junit</groupId>
                 <artifactId>junit</artifactId>
@@ -57,6 +63,29 @@
                 <scope>test</scope>
             </dependency>
 
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-beans</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-context</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-core</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-web</artifactId>
+                <version>5.3.13</version>
+            </dependency>
 
 
         </dependencies>
