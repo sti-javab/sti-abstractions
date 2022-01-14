@@ -11,9 +11,6 @@
     </parent>
 
     <artifactId>sti-abstractions-domain</artifactId>
-    <packaging>pom</packaging>
+    <packaging>jar</packaging>
 
-    <modules>
-        <module></module>
-    </modules>
 </project>

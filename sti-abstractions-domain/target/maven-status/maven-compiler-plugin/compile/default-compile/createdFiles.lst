@@ -2,6 +2,7 @@ sti\abstractions\domain\PineTree.class
 sti\abstractions\domain\Tree.class
 sti\abstractions\domain\PineTree$PineCone.class
 sti\abstractions\domain\Main.class
+sti\abstractions\domain\Season.class
 sti\abstractions\domain\PineCone.class
 sti\abstractions\domain\Owl.class
 sti\abstractions\domain\Aviator.class
