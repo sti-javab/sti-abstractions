@@ -6,21 +6,25 @@
 
     <parent>
         <groupId>se.sti</groupId>
-        <artifactId>sti-abstractions</artifactId>
+        <artifactId>sti-abstractions-test</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>sti-abstractions-service-impl</artifactId>
+    <artifactId>sti-abstractions-test-unit</artifactId>
     <packaging>jar</packaging>
 
     <dependencies>
+
+        <!-- project -->
         <dependency>
             <groupId>se.sti</groupId>
             <artifactId>sti-abstractions-domain</artifactId>
         </dependency>
+
         <dependency>
-            <groupId>se.sti</groupId>
-            <artifactId>sti-abstractions-service</artifactId>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 </project>

@@ -10,17 +10,13 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>sti-abstractions-service-impl</artifactId>
+    <artifactId>sti-abstractions-service</artifactId>
     <packaging>jar</packaging>
 
     <dependencies>
         <dependency>
             <groupId>se.sti</groupId>
             <artifactId>sti-abstractions-domain</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>se.sti</groupId>
-            <artifactId>sti-abstractions-service</artifactId>
         </dependency>
     </dependencies>
 </project>
