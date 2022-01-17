@@ -6,10 +6,11 @@ import sti.abstractions.domain.Squirrel;
 
 public interface ForestService {
 
-    public /*abstract*/ Owl createOwl(int wingSpan);
+    /*abstract*/ Owl createOwl(int wingSpan);
 
-    public Squirrel createSquirrel(int age, String name);
+    Squirrel createSquirrel(int age, String name);
 
-    public PineTree createPineTree(int numOfPineCones);
+    PineTree createPineTree(int numOfPineCones);
 
+    Boolean killOwl(Owl owl);
 }

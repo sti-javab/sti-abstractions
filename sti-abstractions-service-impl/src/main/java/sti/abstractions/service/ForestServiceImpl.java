@@ -21,4 +21,6 @@ public class ForestServiceImpl implements ForestService{
         return null;
     }
 
+    public Boolean killOwl(Owl owl){return null;}
+
 }
