@@ -9,7 +9,7 @@ import java.sql.*;
 public class ForestDaoImpl implements ForestDao {
 
     Connection conn = null;
-    Statement stat = null;
+    PreparedStatement preparedStatement = null;
     ResultSet rs = null;
     int result = 0;
 
@@ -25,11 +25,14 @@ public class ForestDaoImpl implements ForestDao {
 
     @Override
     public Squirrel createSquirrel(int age, String name)  {
-
         try{
             conn = getConnection();
-            stat =conn.prepareStatement("INSERT INTO squirrel ( age, name, source) VALUES(3, 'Piff', 'fredag')");
-            result = stat.executeUpdate("INSERT INTO squirrel ( age, name, source) VALUES(3, 'Piff', 'fredag')");
+            preparedStatement =conn.prepareStatement("INSERT INTO squirrel ( age, name) VALUES( ?, ?)");
+
+            preparedStatement.setInt(1, age);
+            preparedStatement.setString(2, name);
+
+            result = preparedStatement.executeUpdate();
         }catch (SQLException e){
             System.out.println(e);
         }
