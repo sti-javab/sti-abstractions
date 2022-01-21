@@ -33,6 +33,8 @@
 
 
     <modules>
+        <module>sti-abstractions-dao</module>
+        <module>sti-abstractions-dao-impl</module>
         <module>sti-abstractions-domain</module>
         <module>sti-abstractions-service</module>
         <module>sti-abstractions-service-impl</module>
@@ -43,6 +45,11 @@
         <dependencies>
 
             <!-- project -->
+            <dependency>
+                <groupId>se.sti</groupId>
+                <artifactId>sti-abstractions-dao</artifactId>
+                <version>${project.version}</version>
+            </dependency>
             <dependency>
                 <groupId>se.sti</groupId>
                 <artifactId>sti-abstractions-domain</artifactId>

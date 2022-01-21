@@ -5,6 +5,6 @@
                 http://www.springframework.org/schema/beans
                 http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="forestService" class="sti.abstractions.service.ForestServiceImpl2"/>
+    <bean id="forestService" class="sti.abstractions.service.ForestServiceImpl" />
 
-    </beans>
+</beans>
