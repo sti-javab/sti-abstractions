@@ -18,6 +18,14 @@
         <!-- project -->
         <dependency>
             <groupId>se.sti</groupId>
+            <artifactId>sti-abstractions-dao</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>se.sti</groupId>
+            <artifactId>sti-abstractions-dao-impl</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>se.sti</groupId>
             <artifactId>sti-abstractions-domain</artifactId>
         </dependency>
         <dependency>
