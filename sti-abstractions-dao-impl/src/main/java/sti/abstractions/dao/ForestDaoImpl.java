@@ -24,10 +24,20 @@ public class ForestDaoImpl implements ForestDao{
         return null;
     }
 
+
     @Override
     public Squirrel createSquirrel(int age, String name) {
-        return null;
+        String sqlAge = age + "";
+        try{
+            connection = getConnection();
+        }catch (SQLException sqlException){
+            System.err.println(sqlException);
+        }
+
+        return new Squirrel(age, name);
     }
+
+
 
     @Override
     public PineTree createPineTree(int numOfPineCones) {
