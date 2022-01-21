@@ -4,15 +4,14 @@ import sti.abstractions.domain.Owl;
 import sti.abstractions.domain.PineTree;
 import sti.abstractions.domain.Squirrel;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 
-public class ForestDaoImpl implements ForestDao{
+public class ForestDaoImpl implements ForestDao {
 
-    Connection connection = null;
-    Statement statement = null;
+    Connection conn = null;
+    Statement stat = null;
+    ResultSet rs = null;
+    int result = 0;
 
     @Override
     public Connection getConnection() throws SQLException{
@@ -24,20 +23,18 @@ public class ForestDaoImpl implements ForestDao{
         return null;
     }
 
-
     @Override
-    public Squirrel createSquirrel(int age, String name) {
-        String sqlAge = age + "";
-        try{
-            connection = getConnection();
-        }catch (SQLException sqlException){
-            System.err.println(sqlException);
-        }
+    public Squirrel createSquirrel(int age, String name)  {
 
+        try{
+            conn = getConnection();
+            stat =conn.prepareStatement("INSERT INTO squirrel ( age, name, source) VALUES(3, 'Piff', 'fredag')");
+            result = stat.executeUpdate("INSERT INTO squirrel ( age, name, source) VALUES(3, 'Piff', 'fredag')");
+        }catch (SQLException e){
+            System.out.println(e);
+        }
         return new Squirrel(age, name);
     }
-
-
 
     @Override
     public PineTree createPineTree(int numOfPineCones) {
@@ -48,4 +45,5 @@ public class ForestDaoImpl implements ForestDao{
     public Boolean killOwl(Owl owl) {
         return null;
     }
+
 }
