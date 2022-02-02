@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="2" failures="0" name="sti.abstractions.test.unit.TestDao" time="1.316" errors="0" skipped="0">
+<testsuite tests="2" failures="0" name="sti.abstractions.test.unit.TestDao" time="1.456" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="17.0.1+12-LTS-39"/>
@@ -59,6 +59,6 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="sti.abstractions.test.unit.TestDao" name="testCreateSquirrel" time="1.231"/>
-  <testcase classname="sti.abstractions.test.unit.TestDao" name="testGetConnection" time="0.085"/>
+  <testcase classname="sti.abstractions.test.unit.TestDao" name="testCreateSquirrel" time="1.354"/>
+  <testcase classname="sti.abstractions.test.unit.TestDao" name="testGetConnection" time="0.102"/>
 </testsuite>

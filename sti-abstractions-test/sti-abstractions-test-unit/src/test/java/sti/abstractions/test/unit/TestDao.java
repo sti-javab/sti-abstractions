@@ -23,7 +23,7 @@ public class TestDao {
 
     @Test
     public void testCreateSquirrel(){
-        Squirrel piff = forestDao.createSquirrel(5, "Paff");
+        Squirrel piff = forestDao.createSquirrel(10, "Özgür");
         Assert.assertNotNull(piff);
     }
 }
