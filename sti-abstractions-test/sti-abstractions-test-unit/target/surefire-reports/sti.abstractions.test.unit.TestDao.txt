@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: sti.abstractions.test.unit.TestDao
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.583 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.834 sec
