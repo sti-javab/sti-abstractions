@@ -6,6 +6,7 @@ import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import sti.abstractions.domain.Owl;
+import sti.abstractions.domain.Squirrel;
 import sti.abstractions.service.ForestService;
 
 public class TestService {
@@ -25,4 +26,11 @@ public class TestService {
         Assert.assertNotNull(owl);
     }
 
+    /*
+    @Test
+    public void testCreateSquirrel(){
+        Squirrel squirrel= forestService.createSquirrel(3, "Rafi");
+        Assert.assertEquals(3, squirrel.getWeight());
+    }
+*/
 }

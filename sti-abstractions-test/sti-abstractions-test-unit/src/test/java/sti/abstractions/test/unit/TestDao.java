@@ -11,7 +11,7 @@ import java.sql.Connection;
 import java.sql.SQLException;
 
 public class TestDao {
-
+/*
     ApplicationContext context = new ClassPathXmlApplicationContext("classpath:sti-abstractions-dao.xml");
     ForestDao forestDao = (ForestDao) context.getBean("forestDao");
 
@@ -26,4 +26,6 @@ public class TestDao {
         Squirrel piff = forestDao.createSquirrel(10, "Özgür");
         Assert.assertNotNull(piff);
     }
+
+ */
 }
